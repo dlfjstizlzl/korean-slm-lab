@@ -1,0 +1,80 @@
+{
+  "model": "Qwen3-0.6B-KO32K Manager-SLM v1 (merged)",
+  "created_at": "2026-09-26T00:03:20+09:00",
+  "base": "Qwen3-0.6B-KO32K-Stage2-signal2678",
+  "base_weights_sha256": "01b8d9c1bd98da5a1654d4001b20c8d3273dddb5abe8695300a0c8a5b54dd558",
+  "adapter_sha256": "f1df598d22032169b7fd91ed6aef04f0b3e57a3bab9fe5c5f438352f25cbf7b7",
+  "verification": {
+    "merged_modules": 196,
+    "verify_rows": "validation[:64] (sealed test not used)",
+    "last_token_logit_max_abs_diff_vs_unmerged": 8.487701416015625e-05,
+    "next_token_argmax_equal": true,
+    "greedy_raw_generations_identical_to_stored_validation": "64/64"
+  },
+  "files": {
+    "MODEL_CARD.md": {
+      "bytes": 2300,
+      "sha256": "cb7cafdf30d0dd178a36215d44ab8f50a5d548f493e181a8ca5413329d6decaa"
+    },
+    "adapter/adapter_config.json": {
+      "bytes": 4015,
+      "sha256": "2b5686f6e82730c1a4c164f15013a5da3b8d1de572de4a659b590cc1d8243638"
+    },
+    "adapter/adapter_model.safetensors": {
+      "bytes": 40412728,
+      "sha256": "f1df598d22032169b7fd91ed6aef04f0b3e57a3bab9fe5c5f438352f25cbf7b7"
+    },
+    "adapter/trainer_state.json": {
+      "bytes": 3955,
+      "sha256": "f94bb94cc8491d715a5227540b68a9664f77adfae94e05df8cd849dd995729cc"
+    },
+    "added_tokens.json": {
+      "bytes": 306,
+      "sha256": "c3cd311d562b78b56bc1fd6318239088f41a7c7343cb4dd41f73808354b837b1"
+    },
+    "chat_template.jinja": {
+      "bytes": 4168,
+      "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8"
+    },
+    "config.json": {
+      "bytes": 1348,
+      "sha256": "8303381e8d01241b24f1d08a97833429b0a3a353fafa9e9145e3dfcdbb1e7f0a"
+    },
+    "generation_config.json": {
+      "bytes": 173,
+      "sha256": "cdc3b932f8b5d54d5cf8450234995b91eed40228060aa1e98fe13c7446101d6f"
+    },
+    "merges.txt": {
+      "bytes": 521222,
+      "sha256": "f687177632bc338cac4cddf0236bc16d041d7a3a606df74ad484e93333df2c66"
+    },
+    "model.safetensors": {
+      "bytes": 1892976944,
+      "sha256": "1b49fb1f97a31f8acdb819d4f86c77b0c6df45a3aaf4a97b4e850c2c85525395"
+    },
+    "runtime/system_prompt.txt": {
+      "bytes": 5585,
+      "sha256": "32bb38822969407f77935e4acd2bd1a47e72e671a6131be9ddb88938624a4fb3"
+    },
+    "runtime/taskplan_v2.gbnf": {
+      "bytes": 6231,
+      "sha256": "c8000cca089015df69b3b8321acacb954de9259de867a5166171e3b143209970"
+    },
+    "special_tokens_map.json": {
+      "bytes": 741,
+      "sha256": "76ce841946c207198521a60874d798e78791c33660291bd3290681fcfd643d05"
+    },
+    "tokenizer.json": {
+      "bytes": 2725166,
+      "sha256": "d6c554ba791ae7d4b54112e4a9a8f77958553e0a6ccc5d1881c67d9d9d71b2e6"
+    },
+    "tokenizer_config.json": {
+      "bytes": 6931,
+      "sha256": "d697b38a0b0d295a446f2d35b95d83d69972281e85a31e8c8d53f44880d427dd"
+    },
+    "vocab.json": {
+      "bytes": 735423,
+      "sha256": "dec49547370fa394c8426b961c869255aa77d1a57c4bd991d8434697fdc4ea0d"
+    }
+  }
+}

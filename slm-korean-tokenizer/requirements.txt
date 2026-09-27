@@ -1,0 +1,8 @@
+torch>=2.2
+transformers>=4.57,<5
+datasets>=2.18
+sentencepiece>=0.2
+accelerate>=1.0
+protobuf>=5
+ijson>=3,<4
+pytest>=8,<10

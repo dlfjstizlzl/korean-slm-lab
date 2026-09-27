@@ -1,0 +1,55 @@
+{
+  "model": "Qwen3-0.6B-KO32K-Stage2-signal2678",
+  "created_at": "2026-09-26T00:02:04+09:00",
+  "source": "outputs/models/qwen3-0.6b-ko32k-stage2-signal2678",
+  "files": {
+    "MODEL_CARD.md": {
+      "bytes": 834,
+      "sha256": "c0365faf3ca34b6dca900c0f85567d9063144b761efa15ad8d23d764b13c3e13"
+    },
+    "added_tokens.json": {
+      "bytes": 306,
+      "sha256": "c3cd311d562b78b56bc1fd6318239088f41a7c7343cb4dd41f73808354b837b1"
+    },
+    "canonical_metadata.json": {
+      "bytes": 4953,
+      "sha256": "9a3ffafd3dd53a4c161383b7bd356ebec5fabedfd2d58278ac7130c598ffa20b"
+    },
+    "chat_template.jinja": {
+      "bytes": 4168,
+      "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8"
+    },
+    "config.json": {
+      "bytes": 1348,
+      "sha256": "8303381e8d01241b24f1d08a97833429b0a3a353fafa9e9145e3dfcdbb1e7f0a"
+    },
+    "generation_config.json": {
+      "bytes": 173,
+      "sha256": "cdc3b932f8b5d54d5cf8450234995b91eed40228060aa1e98fe13c7446101d6f"
+    },
+    "merges.txt": {
+      "bytes": 521222,
+      "sha256": "f687177632bc338cac4cddf0236bc16d041d7a3a606df74ad484e93333df2c66"
+    },
+    "model.safetensors": {
+      "bytes": 1892976944,
+      "sha256": "01b8d9c1bd98da5a1654d4001b20c8d3273dddb5abe8695300a0c8a5b54dd558"
+    },
+    "special_tokens_map.json": {
+      "bytes": 741,
+      "sha256": "76ce841946c207198521a60874d798e78791c33660291bd3290681fcfd643d05"
+    },
+    "tokenizer.json": {
+      "bytes": 2725166,
+      "sha256": "d6c554ba791ae7d4b54112e4a9a8f77958553e0a6ccc5d1881c67d9d9d71b2e6"
+    },
+    "tokenizer_config.json": {
+      "bytes": 6931,
+      "sha256": "d697b38a0b0d295a446f2d35b95d83d69972281e85a31e8c8d53f44880d427dd"
+    },
+    "vocab.json": {
+      "bytes": 735423,
+      "sha256": "dec49547370fa394c8426b961c869255aa77d1a57c4bd991d8434697fdc4ea0d"
+    }
+  }
+}

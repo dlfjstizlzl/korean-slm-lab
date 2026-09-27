@@ -1,0 +1,14 @@
+{
+  "</think>": 31999,
+  "</tool_call>": 31989,
+  "</tool_response>": 31997,
+  "<think>": 31998,
+  "<tool_call>": 31988,
+  "<tool_response>": 31996,
+  "<|file_sep|>": 31995,
+  "<|fim_middle|>": 31991,
+  "<|fim_pad|>": 31993,
+  "<|fim_prefix|>": 31990,
+  "<|fim_suffix|>": 31992,
+  "<|repo_name|>": 31994
+}

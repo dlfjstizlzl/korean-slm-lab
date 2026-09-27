@@ -1,0 +1,96 @@
+{
+  "base_model": "Qwen3-0.6B-KO32K-Stage2-signal2678",
+  "base_model_path": "outputs/models/qwen3-0.6b-ko32k-stage2-signal2678",
+  "lora": {
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "bias": "none",
+    "targets": "every nn.Linear inside model.layers.* (discovered at runtime)",
+    "frozen": "embeddings, tied lm_head, norms, all base weights"
+  },
+  "target_modules": [
+    "down_proj",
+    "gate_proj",
+    "k_proj",
+    "o_proj",
+    "q_proj",
+    "up_proj",
+    "v_proj"
+  ],
+  "seed": 20260927,
+  "provenance": {
+    "base_model": "Qwen3-0.6B-KO32K-Stage2-signal2678",
+    "base_model_weights_sha256": "01b8d9c1bd98da5a1654d4001b20c8d3273dddb5abe8695300a0c8a5b54dd558",
+    "tokenizer_json_sha256": "d6c554ba791ae7d4b54112e4a9a8f77958553e0a6ccc5d1881c67d9d9d71b2e6",
+    "train_sha256": "4e9ac5585c70cc32c8242564260378b4248cbd0326024930a955ff8e8749d580",
+    "validation_sha256": "5ba3b799f7deebac0218dc0af24a58162e9ba2588c58f6e638ebab9d4ff4e457",
+    "sealed_test": {
+      "path": "data/manager/manager_v1_5k_test.jsonl",
+      "exists": true,
+      "sha256": "6cdb3f55904cfa3f77dce9f37ec6a9bb1c3f1dea85d3b19c24e0beefffb5f98e",
+      "matches_recorded_sha256": true
+    },
+    "system_prompt_sha256": "32bb38822969407f77935e4acd2bd1a47e72e671a6131be9ddb88938624a4fb3",
+    "grammar_sha256": "c8000cca089015df69b3b8321acacb954de9259de867a5166171e3b143209970",
+    "runtime_contract_sources": {
+      "src/manager/skill_registry.hpp": "3da09d5d2c860836d33321a9e8d2319ac9589fa6bc27d7a1e099107e3e0ab001",
+      "src/manager/skill_registry.cpp": "ec73523cd702f31a6ac4dae5ed6b19564c65cb7e0800f52576e98180e9282b58",
+      "src/manager/task_plan.hpp": "17983a680a78d1dd828e2a3dd8c08d23c891da7708620def4203e11b06d02dad",
+      "src/manager/task_plan.cpp": "a9083fb7c97912e151e2fafb5029616a6bf446c5d301deacd3193c0bc2ff598b",
+      "src/manager/manager_client.hpp": "4c93b5993ffaf3b6ccc6bba8febd2fa2c28240f8bd855b554d6f9a0133e22d22",
+      "src/manager/manager_client.cpp": "7387b7c33c9f1d29f4cf12f82063b613abd50a001b5becf232123f1fa6ab1610",
+      "src/manager/skill_prompt_adapter.cpp": "b62c325e1a17e9d24264bb6d850c58ed22c4c82c30a5a1627e6a887f30b277c0",
+      "src/manager/task_executor.cpp": "4bba3d9214b05a0d0203953d39f12b84814c69a20690978281d3904f9bb02a4a",
+      "src/skills/search_backend.cpp": "98b3b2866fff3bad512cfb883cd94434120074d14c175bfde3ed72470bd1c430",
+      "src/skills/sql_backend.cpp": "46d6a381889fd2bbc064e0b2a5fb6e8b07a2983a606a2bf9075701165b92c108",
+      "tools/taskplan_tool.cpp": "2147e4a4727added70d3c4ad5f68057cc7d65cd5d6dd4943e5d263818c1f20c2"
+    }
+  },
+  "epoch": 2,
+  "validation": {
+    "val_loss": 0.016664007546586285,
+    "raw": {
+      "n": 454,
+      "json_valid": 1.0,
+      "schema_valid": 0.9956,
+      "canonical_valid": 0.9956,
+      "grammar_valid": 0.9802,
+      "status_accuracy": 0.9868,
+      "task_count_accuracy": 0.9648,
+      "skill_sequence_accuracy": 0.9537,
+      "skill_accuracy_aligned": 0.9658,
+      "sources_exact": 0.9648,
+      "outputs_exact": 0.9648,
+      "topology_exact": 0.9537,
+      "structural_exact": 0.9537,
+      "instruction_exact": 0.804,
+      "task_instruction_accuracy_aligned": 0.8712,
+      "canonical_exact": 0.804,
+      "dependency_edge_precision": 0.9664,
+      "dependency_edge_recall": 0.962,
+      "dependency_edge_f1": 0.9642
+    },
+    "constrained": {
+      "n": 454,
+      "json_valid": 1.0,
+      "schema_valid": 0.9956,
+      "canonical_valid": 0.9956,
+      "grammar_valid": 1.0,
+      "status_accuracy": 0.9868,
+      "task_count_accuracy": 0.9648,
+      "skill_sequence_accuracy": 0.9537,
+      "skill_accuracy_aligned": 0.9658,
+      "sources_exact": 0.9648,
+      "outputs_exact": 0.9648,
+      "topology_exact": 0.9537,
+      "structural_exact": 0.9537,
+      "instruction_exact": 0.804,
+      "task_instruction_accuracy_aligned": 0.8712,
+      "canonical_exact": 0.804,
+      "dependency_edge_precision": 0.9664,
+      "dependency_edge_recall": 0.962,
+      "dependency_edge_f1": 0.9642
+    }
+  }
+}

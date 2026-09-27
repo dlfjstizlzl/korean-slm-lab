@@ -1,0 +1,8 @@
+Korean Small Language Model Lab — public code portfolio
+Copyright 2026 dlfjstizlzl
+
+Repository-owned code and documentation are licensed under Apache-2.0.
+See LICENSE and THIRD_PARTY_NOTICES.md for third-party components and data sources.
+
+Tokenizer configuration, special tokens, and chat templates under models/ derive
+from Qwen/Qwen3-0.6B, Copyright (c) Alibaba Cloud, Apache-2.0.
